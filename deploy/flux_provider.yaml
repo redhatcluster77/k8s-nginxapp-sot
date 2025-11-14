@@ -1,0 +1,10 @@
+apiVersion: notification.toolkit.fluxcd.io/v1beta3
+kind: Provider
+metadata:
+  name: fluxgithubprovider
+  namespace: fluxcdtutorial
+spec:
+  type: github
+  address: https://github.com/redhatcluster77/k8s-nginxapp-sot
+  secretRef:
+    name: github

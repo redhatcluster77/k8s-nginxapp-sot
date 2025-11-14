@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: k8s-nginxapp-sot		### git repo ar sateh match rakha valo ##
+  namespace: fluxcdtutorial
+spec:
+  interval: 30s
+  ref:
+    branch: main
+  url: https://github.com/redhatcluster77/k8s-nginxapp-sot.git
