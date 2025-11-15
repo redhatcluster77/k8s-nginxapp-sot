@@ -6,7 +6,7 @@ metadata:
   namespace: fluxcdtutorial
 spec:
   interval: 1m0s
-  path: ./manifests/monitoring/kube-prometheus-stack
+  path: ./deploy/kube-prometheus-stack
   prune: true
   sourceRef:
     kind: GitRepository
